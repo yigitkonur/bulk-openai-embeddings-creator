@@ -63,7 +63,9 @@ def worker():
         logging.info(f"Processing document {index}")
         endpoint, api_key, deployment_name = next(openai_endpoints_and_keys)
         vectors = generate_embedding(row['document'], endpoint, api_key, deployment_name)
-        output_df.loc[index] = [row['id'], row['wopeCat'], row['googleCat'], row['openaiCat'], str(vectors)]  # Convert the list into a string
+        row_dict = row.to_dict()
+        row_dict['vectors'] = str(vectors)  # Add the generated vectors to the row's data
+        output_df.loc[index] = row_dict  # Append the result to the DataFrame
         q.task_done()
 
 # Start the worker threads
