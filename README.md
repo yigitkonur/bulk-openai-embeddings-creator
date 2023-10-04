@@ -62,4 +62,4 @@ The output file will be a TSV, CSV, or JSON file containing the generated embedd
 
 The script displays a progress bar while processing the documents. It also logs information about the processing status and any errors that occur.
 
-![CleanShot 2023-10-04 at 10 40 09](https://github.com/yigitkonur/bulk-openai-embeddings-creator/assets/9989650/3e7bd6fd-b7c4-4b55-ba38-87e5ad3d140c)
+![CleanShot 2023-10-04 at 11 01 12](https://github.com/yigitkonur/bulk-openai-embeddings-creator/assets/9989650/6e0baadd-de70-45b1-af44-928a1a72e261)
